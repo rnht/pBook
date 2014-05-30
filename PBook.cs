@@ -1,11 +1,21 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace pBook
 {
 	public class PBook
 	{
+		public List<PEntry> QueryResult;
+		public String Query { get; private set;}
+
+
 		public enum Error
+		{
+			NONE
+		}
+
+		public enum Field
 		{
 
 		}
@@ -14,12 +24,22 @@ namespace pBook
 		{
 		}
 
-		public static PBook create(Path file)
+		public static PBook create(Stream stream, out Error e)
 		{
 
 		}
 
-		public static
+		public void inputQuery(char c)
+		{
+		}
+
+		public void clearQuery()
+		{
+		}
+
+		public void query(String str)
+		{
+		}
 	}
 }
 
